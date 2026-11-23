@@ -3,16 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ever Seas — Endless ocean adventure</title>
-  <meta name="description" content="Ever Seas is an open-world game inspired by No Man's Sky, focused entirely on an endless ocean. In development for PC and Nintendo Switch 2.">
+  <title>Ever Seas — Endless Ocean Adventure</title>
+  <meta name="description" content="Sail, dive, and build on an endless ocean. Discover islands in a world that never ends. Ever Seas is in development for PC and Nintendo Switch 2.">
+  <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#070d14">
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://everseas.app/">
-  <meta property="og:title" content="EVER SEAS">
-  <meta property="og:description" content="Explore an endless ocean. Discover. Survive. Adventure.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:site_name" content="Ever Seas">
+  <meta property="og:title" content="Ever Seas — Endless Ocean Adventure">
+  <meta property="og:description" content="Sail, dive, and build on an endless ocean. Discover islands in a world that never ends. Ever Seas is in development for PC and Nintendo Switch 2.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://everseas.app/">
-  <meta property="og:image" content="https://everseas.app/assets/hero-1280.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://everseas.app/assets/og-image.jpg">
+  <meta property="og:image:secure_url" content="https://everseas.app/assets/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Concept art of a boat on a wave at golden hour">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ever Seas — Endless Ocean Adventure">
+  <meta name="twitter:description" content="Sail, dive, and build on an endless ocean. Discover islands in a world that never ends. Ever Seas is in development for PC and Nintendo Switch 2.">
+  <meta name="twitter:image" content="https://everseas.app/assets/og-image.jpg">
+  <meta name="twitter:image:alt" content="Concept art of a boat on a wave at golden hour">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Ever Seas",
+    "url": "https://everseas.app/",
+    "image": "https://everseas.app/assets/og-image.jpg",
+    "description": "Sail, dive, and build on an endless ocean. Discover islands in a world that never ends. Ever Seas is in development for PC and Nintendo Switch 2.",
+    "genre": ["Adventure", "Open world", "Exploration"],
+    "gamePlatform": ["PC", "Nintendo Switch 2"],
+    "inLanguage": "en"
+  }
+  </script>
   <link rel="preload" as="image" href="assets/hero-1280.webp" imagesrcset="assets/hero-768.webp 768w, assets/hero-1280.webp 1280w, assets/hero-1920.webp 1920w" imagesizes="100vw" type="image/webp" fetchpriority="high">
   <link rel="preload" href="fonts/big-shoulders-display-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
@@ -25,13 +55,12 @@
         <img src="icon.svg" width="36" height="36" alt="">
         <span>EVER SEAS</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
       <nav id="site-nav" aria-label="Primary">
         <ul class="nav-list">
           <li><a href="#about">About</a></li>
           <li><a href="#world">World</a></li>
           <li><a href="#features">Features</a></li>
-          <li><a href="#controls">Controls</a></li>
           <li><a href="#platforms">Platforms</a></li>
         </ul>
       </nav>
@@ -70,7 +99,7 @@
       <div class="section-inner about-copy reveal">
         <p class="kicker">About the game</p>
         <h2 id="about-title">A sea with no edge</h2>
-        <p class="lede">Ever Seas is an open-world game inspired by No Man's Sky, focused entirely on an endless ocean. Sail, dive, build, gather resources, and discover mysterious islands in a procedurally generated world that never ends.</p>
+        <p class="lede">Ever Seas is an open-world game on an endless ocean. Sail, dive, build, gather resources, and discover mysterious islands in a world that never ends.</p>
         <p class="lede">Built in Godot 4.</p>
       </div>
     </section>
@@ -86,7 +115,7 @@
       <div class="split-copy">
         <p class="kicker">Islands</p>
         <h2>Six biomes, no two alike</h2>
-        <p>Procedurally generated islands rise out of the ocean. Each one is a different biome.</p>
+        <p>Islands rise out of the ocean. Each one is a different biome.</p>
         <ul class="chips" aria-label="Island biomes">
           <li>Sandy</li>
           <li>Forested</li>
@@ -128,26 +157,26 @@
           <button class="shot" type="button" data-lightbox data-full="assets/hero-1280.webp" data-fallback="assets/hero-1280.jpg" data-label="Concept art of a boat on a wave at golden hour">
             <picture>
               <source type="image/webp" srcset="assets/hero-768.webp">
-              <img src="assets/hero-768.jpg" alt="" width="768" height="432" loading="lazy" decoding="async">
+              <img src="assets/hero-768.jpg" alt="Concept art of a boat on a wave at golden hour" width="768" height="432" loading="lazy" decoding="async">
             </picture>
-            <span class="shot-title">Golden hour</span>
-            <span class="shot-note">Concept art</span>
+            <span class="shot-title" aria-hidden="true">Golden hour</span>
+            <span class="shot-note" aria-hidden="true">Concept art</span>
           </button>
           <button class="shot" type="button" data-lightbox data-full="assets/island-1280.webp" data-fallback="assets/island-1280.jpg" data-label="Concept art of an atoll with boats and a storm">
             <picture>
               <source type="image/webp" srcset="assets/island-768.webp">
-              <img src="assets/island-768.jpg" alt="" width="768" height="432" loading="lazy" decoding="async">
+              <img src="assets/island-768.jpg" alt="Concept art of an atoll with boats and a storm" width="768" height="432" loading="lazy" decoding="async">
             </picture>
-            <span class="shot-title">The atoll</span>
-            <span class="shot-note">Concept art</span>
+            <span class="shot-title" aria-hidden="true">The atoll</span>
+            <span class="shot-note" aria-hidden="true">Concept art</span>
           </button>
           <button class="shot" type="button" data-lightbox data-full="assets/underwater-1280.webp" data-fallback="assets/underwater-1280.jpg" data-label="Concept art of a diver at hydrothermal vents beside an underwater base">
             <picture>
               <source type="image/webp" srcset="assets/underwater-768.webp">
-              <img src="assets/underwater-768.jpg" alt="" width="768" height="432" loading="lazy" decoding="async">
+              <img src="assets/underwater-768.jpg" alt="Concept art of a diver at hydrothermal vents beside an underwater base" width="768" height="432" loading="lazy" decoding="async">
             </picture>
-            <span class="shot-title">The depths</span>
-            <span class="shot-note">Concept art</span>
+            <span class="shot-title" aria-hidden="true">The depths</span>
+            <span class="shot-note" aria-hidden="true">Concept art</span>
           </button>
         </div>
       </div>
@@ -162,7 +191,7 @@
           <li class="card">
             <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 13c2.6-3.2 4.8-3.2 7.4 0s4.8 3.2 7.4 0 4.8-3.2 7.4 0 3.2 3.2 3.4 0"/><path d="M3 21c2.6-3.2 4.8-3.2 7.4 0s4.8 3.2 7.4 0 4.8-3.2 7.4 0 3.2 3.2 3.4 0"/></svg></span>
             <h3>Endless ocean</h3>
-            <p>An infinite, procedurally generated ocean. Set a course in any direction and the sea keeps going.</p>
+            <p>An endless ocean. Set a course in any direction and the sea keeps going.</p>
           </li>
           <li class="card">
             <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 23c3.2-7 7-11 12-11s8.8 4 12 11"/><path d="M16 12V7"/></svg></span>
@@ -221,65 +250,6 @@
             <p>Rare bandits are out on the ocean.</p>
           </li>
         </ul>
-      </div>
-    </section>
-
-    <div class="wave-rule on-panel" aria-hidden="true">
-      <svg viewBox="0 0 2880 42" preserveAspectRatio="none">
-        <path fill="currentColor" d="M0 22c120-16 240-16 360 0s240 16 360 0 240-16 360 0 240 16 360 0 240-16 360 0 240 16 360 0 240-16 360 0v20H0z"/>
-      </svg>
-    </div>
-
-    <section class="section panel" id="controls" aria-labelledby="controls-title">
-      <div class="section-inner reveal">
-        <p class="kicker">Controls</p>
-        <h2 id="controls-title">Controls</h2>
-        <p class="lede">Keyboard controls for steering, diving, crafting, and the rest of a voyage.</p>
-        <div class="pad">
-          <div class="pad-shoulders">
-            <div class="shoulder"><kbd>Space</kbd><span>Dive mode, up</span></div>
-            <div class="shoulder"><kbd>Ctrl</kbd><span>Dive mode, down</span></div>
-          </div>
-          <div class="pad-body">
-            <div class="cluster">
-              <div class="dpad" aria-label="Steer or swim">
-                <kbd>W</kbd>
-                <div class="dpad-mid"><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></div>
-              </div>
-              <p>Steer / swim</p>
-            </div>
-            <div class="cluster">
-              <div class="face" aria-label="Actions">
-                <kbd>Q</kbd>
-                <div class="face-mid"><kbd>E</kbd><kbd>C</kbd></div>
-                <kbd>V</kbd>
-              </div>
-              <p>Q attack · E dive / surface · C craft · V sell</p>
-            </div>
-          </div>
-          <div class="pad-extra">
-            <div class="extra-item">
-              <div class="keys"><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd></div>
-              <span>Upgrade skills</span>
-            </div>
-            <div class="extra-item">
-              <div class="keys"><kbd>B</kbd></div>
-              <span>Place underwater base</span>
-            </div>
-            <div class="extra-item">
-              <div class="keys"><kbd>R</kbd></div>
-              <span>Upgrade weapon</span>
-            </div>
-            <div class="extra-item">
-              <div class="keys"><kbd>F</kbd><kbd>M</kbd></div>
-              <span>Companion, woman / man</span>
-            </div>
-          </div>
-          <div class="pad-shoulders pad-save">
-            <div class="shoulder"><kbd>F5</kbd><span>Save</span></div>
-            <div class="shoulder"><kbd>F9</kbd><span>Load</span></div>
-          </div>
-        </div>
       </div>
     </section>
 
