@@ -1,6 +1,6 @@
 # Ever Seas
 
-Presentation site for **Ever Seas**, an endless-ocean game in development for PC and Nintendo Switch 2.
+Presentation site for **Ever Seas**, an endless-ocean game coming to PC.
 
 The site is static HTML, CSS, and JavaScript in [`site/`](site/). There is no build step. GitHub Actions (`.github/workflows/pages.yml`) publishes that folder to GitHub Pages, with the custom domain `everseas.app` (`site/CNAME`).
 
