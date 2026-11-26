@@ -25,6 +25,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
+      - name: Decode screenshot assets
+        run: python3 site/decode-assets.py
+
+      - name: Remove encoded screenshot payloads from the published site
+        run: rm -f site/assets/*.b64 site/decode-assets.py
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
         with:
